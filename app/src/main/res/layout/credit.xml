@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0sp"
+        android:layout_weight="1.5"
+        >
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/creditLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="8.5"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <ScrollView
+            android:id="@+id/leftScroll"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scrollbars="none"
+            >
+
+            <RelativeLayout
+                android:id="@+id/leftCredit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/left1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:letterSpacing="0.5"
+                    android:singleLine="true"
+                    android:text="개발자"
+
+                    android:textAlignment="center"
+                    android:textColor="#ffffffff"
+                    android:textSize="35sp"
+
+                    android:textStyle="bold"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/left2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/left1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5sp"
+                    android:letterSpacing="0.3"
+
+                    android:singleLine="true"
+                    android:text="이공 일타 게임즈 팀"
+                    android:textAlignment="center"
+
+                    android:textColor="#ffffffff"
+                    android:textSize="20sp"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/left3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/left2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30sp"
+
+                    android:letterSpacing="0.5"
+                    android:singleLine="true"
+                    android:text="지도교수"
+
+                    android:textAlignment="center"
+                    android:textColor="#ffffffff"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/left4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/left3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5sp"
+                    android:letterSpacing="0.3"
+
+                    android:singleLine="true"
+                    android:text="김덕수"
+                    android:textAlignment="center"
+
+                    android:textColor="#ffffffff"
+                    android:textSize="20sp"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/left5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/left4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30sp"
+
+                    android:letterSpacing="0.5"
+                    android:singleLine="true"
+                    android:text="팀장"
+
+                    android:textAlignment="center"
+                    android:textColor="#ffffffff"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/left6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/left5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5sp"
+                    android:letterSpacing="0.3"
+
+                    android:singleLine="true"
+                    android:text="김수용"
+                    android:textAlignment="center"
+
+                    android:textColor="#ffffffff"
+                    android:textSize="20sp"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/left7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/left6"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30sp"
+
+                    android:letterSpacing="0.5"
+                    android:singleLine="true"
+                    android:text="팀원"
+
+                    android:textAlignment="center"
+                    android:textColor="#ffffffff"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/left8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/left7"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5sp"
+                    android:letterSpacing="0.3"
+
+                    android:singleLine="true"
+                    android:text="이예지"
+                    android:textAlignment="center"
+
+                    android:textColor="#ffffffff"
+                    android:textSize="20sp"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/left9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/left8"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5sp"
+                    android:letterSpacing="0.3"
+
+                    android:singleLine="true"
+                    android:text="주지영"
+                    android:textAlignment="center"
+
+                    android:textColor="#ffffffff"
+                    android:textSize="20sp"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+
+                <!--        여기까지-->
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/left10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/left9"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30sp"
+
+                    android:letterSpacing="0.5"
+                    android:singleLine="true"
+                    android:text="디자인"
+
+                    android:textAlignment="center"
+                    android:textColor="#ffffffff"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/left11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/left10"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5sp"
+                    android:letterSpacing="0.3"
+
+                    android:singleLine="true"
+                    android:text="Kevin - 김수용"
+                    android:textAlignment="center"
+
+                    android:textColor="#ffffffff"
+                    android:textSize="20sp"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/left12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/left11"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5sp"
+                    android:letterSpacing="0.3"
+
+                    android:singleLine="true"
+                    android:text="배경 - 이예지, 주지영"
+                    android:textAlignment="center"
+
+                    android:textColor="#ffffffff"
+                    android:textSize="20sp"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/left13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/left12"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5sp"
+                    android:letterSpacing="0.3"
+
+                    android:singleLine="true"
+                    android:text="아이콘 - 이예지, 주지영"
+                    android:textAlignment="center"
+
+                    android:textColor="#ffffffff"
+                    android:textSize="20sp"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/left14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/left13"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5sp"
+                    android:letterSpacing="0.3"
+
+                    android:singleLine="true"
+                    android:text="음악감독 - 김수용"
+                    android:textAlignment="center"
+
+                    android:textColor="#ffffffff"
+                    android:textSize="20sp"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/left15"
+                    android:layout_width="match_parent"
+                    android:layout_height="20sp"
+                    android:layout_below="@id/left14"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5sp"
+                    android:autoSizeMaxTextSize="20sp"
+
+                    android:autoSizeTextType="uniform"
+                    android:letterSpacing="0.3"
+                    android:singleLine="true"
+                    android:text="목소리 - 김수용, 이예지, 주지영"
+
+                    android:textAlignment="center"
+                    android:textColor="#ffffffff"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/left16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/left15"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30sp"
+
+                    android:letterSpacing="0.5"
+                    android:singleLine="true"
+                    android:text="개발기간"
+
+                    android:textAlignment="center"
+                    android:textColor="#ffffffff"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/left17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/left16"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5sp"
+                    android:letterSpacing="0.3"
+
+                    android:singleLine="true"
+                    android:text="19.12.23 ~ 20.09.23"
+                    android:textAlignment="center"
+
+                    android:textColor="#ffffffff"
+                    android:textSize="20sp"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/left18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/left17"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30sp"
+
+                    android:letterSpacing="0.5"
+                    android:singleLine="true"
+                    android:text="개발 도움"
+
+                    android:textAlignment="center"
+                    android:textColor="#ffffffff"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/left19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/left18"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5sp"
+                    android:letterSpacing="0.3"
+
+                    android:singleLine="true"
+                    android:text="TensorFlow Light"
+                    android:textAlignment="center"
+
+                    android:textColor="#ffffffff"
+                    android:textSize="20sp"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/left20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/left19"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5sp"
+                    android:letterSpacing="0.3"
+
+                    android:singleLine="true"
+                    android:text="Firebase ML-Kit"
+                    android:textAlignment="center"
+
+                    android:textColor="#ffffffff"
+                    android:textSize="20sp"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/left21"
+                    android:layout_width="match_parent"
+                    android:layout_height="25sp"
+                    android:layout_below="@id/left20"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="100sp"
+                    android:autoSizeMaxTextSize="25sp"
+
+                    android:autoSizeTextType="uniform"
+                    android:letterSpacing="0.3"
+                    android:singleLine="true"
+
+                    android:text="THANKS FOR PLAYING!"
+                    android:textAlignment="center"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/left22"
+                    android:layout_width="match_parent"
+                    android:layout_height="25sp"
+                    android:layout_below="@id/left21"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20sp"
+                    android:autoSizeMaxTextSize="25sp"
+
+                    android:autoSizeTextType="uniform"
+                    android:letterSpacing="0.3"
+                    android:singleLine="true"
+                    android:text="Copyright ⓒ HPC Lab."
+                    android:textAlignment="center"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/left23"
+                    android:layout_width="match_parent"
+                    android:layout_height="25sp"
+                    android:layout_below="@id/left22"
+                    android:layout_centerHorizontal="true"
+                    android:autoSizeMaxTextSize="25sp"
+
+                    android:autoSizeTextType="uniform"
+                    android:letterSpacing="0.3"
+                    android:singleLine="true"
+                    android:text="All rights reserved."
+                    android:textAlignment="center"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/rightScroll"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:id="@+id/rightCredit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/right1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:letterSpacing="0.5"
+                    android:singleLine="true"
+                    android:text="개발자"
+
+                    android:textAlignment="center"
+                    android:textColor="#ffffffff"
+                    android:textSize="35sp"
+
+                    android:textStyle="bold"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/right2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/right1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5sp"
+                    android:letterSpacing="0.3"
+
+                    android:singleLine="true"
+                    android:text="이공 일타 게임즈 팀"
+                    android:textAlignment="center"
+
+                    android:textColor="#ffffffff"
+                    android:textSize="20sp"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/right3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/right2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30sp"
+
+                    android:letterSpacing="0.5"
+                    android:singleLine="true"
+                    android:text="지도교수"
+
+                    android:textAlignment="center"
+                    android:textColor="#ffffffff"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/right4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/right3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5sp"
+                    android:letterSpacing="0.3"
+
+                    android:singleLine="true"
+                    android:text="김덕수"
+                    android:textAlignment="center"
+
+                    android:textColor="#ffffffff"
+                    android:textSize="20sp"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/right5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/right4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30sp"
+
+                    android:letterSpacing="0.5"
+                    android:singleLine="true"
+                    android:text="팀장"
+
+                    android:textAlignment="center"
+                    android:textColor="#ffffffff"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/right6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/right5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5sp"
+                    android:letterSpacing="0.3"
+
+                    android:singleLine="true"
+                    android:text="김수용"
+                    android:textAlignment="center"
+
+                    android:textColor="#ffffffff"
+                    android:textSize="20sp"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/right7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/right6"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30sp"
+
+                    android:letterSpacing="0.5"
+                    android:singleLine="true"
+                    android:text="팀원"
+
+                    android:textAlignment="center"
+                    android:textColor="#ffffffff"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/right8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/right7"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5sp"
+                    android:letterSpacing="0.3"
+
+                    android:singleLine="true"
+                    android:text="이예지"
+                    android:textAlignment="center"
+
+                    android:textColor="#ffffffff"
+                    android:textSize="20sp"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/right9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/right8"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5sp"
+                    android:letterSpacing="0.3"
+
+                    android:singleLine="true"
+                    android:text="주지영"
+                    android:textAlignment="center"
+
+                    android:textColor="#ffffffff"
+                    android:textSize="20sp"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+
+                <!--        여기까지-->
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/right10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/right9"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30sp"
+
+                    android:letterSpacing="0.5"
+                    android:singleLine="true"
+                    android:text="디자인"
+
+                    android:textAlignment="center"
+                    android:textColor="#ffffffff"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/right11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/right10"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5sp"
+                    android:letterSpacing="0.3"
+
+                    android:singleLine="true"
+                    android:text="Kevin - 김수용"
+                    android:textAlignment="center"
+
+                    android:textColor="#ffffffff"
+                    android:textSize="20sp"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/right12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/right11"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5sp"
+                    android:letterSpacing="0.3"
+
+                    android:singleLine="true"
+                    android:text="배경 - 이예지, 주지영"
+                    android:textAlignment="center"
+
+                    android:textColor="#ffffffff"
+                    android:textSize="20sp"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/right13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/right12"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5sp"
+                    android:letterSpacing="0.3"
+
+                    android:singleLine="true"
+                    android:text="아이콘 - 이예지, 주지영"
+                    android:textAlignment="center"
+
+                    android:textColor="#ffffffff"
+                    android:textSize="20sp"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/right14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/right13"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5sp"
+                    android:letterSpacing="0.3"
+
+                    android:singleLine="true"
+                    android:text="음악감독 - 김수용"
+                    android:textAlignment="center"
+
+                    android:textColor="#ffffffff"
+                    android:textSize="20sp"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/right15"
+                    android:layout_width="match_parent"
+                    android:layout_height="20sp"
+                    android:layout_below="@id/right14"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5sp"
+                    android:autoSizeMaxTextSize="20sp"
+
+                    android:autoSizeTextType="uniform"
+                    android:letterSpacing="0.3"
+                    android:singleLine="true"
+                    android:text="목소리 - 김수용, 이예지, 주지영"
+
+                    android:textAlignment="center"
+                    android:textColor="#ffffffff"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/right16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/right15"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30sp"
+
+                    android:letterSpacing="0.5"
+                    android:singleLine="true"
+                    android:text="개발기간"
+
+                    android:textAlignment="center"
+                    android:textColor="#ffffffff"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/right17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/right16"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5sp"
+                    android:letterSpacing="0.3"
+
+                    android:singleLine="true"
+                    android:text="19.12.23 ~ 20.09.23"
+                    android:textAlignment="center"
+
+                    android:textColor="#ffffffff"
+                    android:textSize="20sp"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/right18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/right17"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30sp"
+
+                    android:letterSpacing="0.5"
+                    android:singleLine="true"
+                    android:text="개발 도움"
+
+                    android:textAlignment="center"
+                    android:textColor="#ffffffff"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/right19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/right18"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5sp"
+                    android:letterSpacing="0.3"
+
+                    android:singleLine="true"
+                    android:text="TensorFlow Light"
+                    android:textAlignment="center"
+
+                    android:textColor="#ffffffff"
+                    android:textSize="20sp"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/right20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/right19"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5sp"
+                    android:letterSpacing="0.3"
+
+                    android:singleLine="true"
+                    android:text="Firebase ML-Kit"
+                    android:textAlignment="center"
+
+                    android:textColor="#ffffffff"
+                    android:textSize="20sp"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/right21"
+                    android:layout_width="match_parent"
+                    android:layout_height="25sp"
+                    android:layout_below="@id/right20"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="100sp"
+                    android:autoSizeMaxTextSize="25sp"
+
+                    android:autoSizeTextType="uniform"
+                    android:letterSpacing="0.3"
+                    android:singleLine="true"
+
+                    android:text="THANKS FOR PLAYING!"
+                    android:textAlignment="center"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/right22"
+                    android:layout_width="match_parent"
+                    android:layout_height="25sp"
+                    android:layout_below="@id/right21"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20sp"
+                    android:autoSizeMaxTextSize="25sp"
+
+                    android:autoSizeTextType="uniform"
+                    android:letterSpacing="0.3"
+                    android:singleLine="true"
+                    android:text="Copyright ⓒ HPC Lab."
+                    android:textAlignment="center"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+
+                <org.tensorflow.lite.examples.classification.OutlineTextView
+                    android:id="@+id/right23"
+                    android:layout_width="match_parent"
+                    android:layout_height="25sp"
+                    android:layout_below="@id/right22"
+                    android:layout_centerHorizontal="true"
+                    android:autoSizeMaxTextSize="25sp"
+
+                    android:autoSizeTextType="uniform"
+                    android:letterSpacing="0.3"
+                    android:singleLine="true"
+                    android:text="All rights reserved."
+                    android:textAlignment="center"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold"
+                    app:textStroke="true"
+                    app:textStrokeColor="#000000"
+                    app:textStrokeWidth="5.0" />
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
